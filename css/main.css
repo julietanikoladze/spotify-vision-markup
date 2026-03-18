@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Satoshi-Regular";
+  src: url("/scss/base/fonts/Satoshi-Regular.woff2") format("woff2"), url("/scss/base/fonts/Satoshi-Regular.woff") format("woff"), url("/scss/base/fonts/Satoshi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+* {
+  font-family: "Satoshi-Regular";
+}
+
+.left-sidebar {
+  background-color: rgb(6, 6, 6);
+  width: 25.9rem;
+  height: 100vh;
+  padding-inline: 1.1rem;
+}
+
+.sidebar-actions {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+
+.sidebar-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-coclor 0.3s ease-in-out color 0.3s ease;
+}
+.sidebar-action:hover {
+  transform: scale(1.1);
+  background-color: rgba(6, 6, 6, 0.8);
+}
+
+.sidebar-action__name {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1.4rem;
+  letter-spacing: 3%;
+  color: rgb(137, 137, 137);
+  padding: 1.5rem;
+  gap: 1rem;
+}
+
+.dropdown-arrow {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/*# sourceMappingURL=main.css.map */

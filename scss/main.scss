@@ -1,12 +1,12 @@
-@use "../abstracts/variables.scss";
-@use "../abstracts/mixins";
+// @use "../abstracts/variables";
+// @use "../abstracts/mixins";
 @use "../base/reset";
-@use "../base/typograpy";
+@use "../base/typography";
 @use "../components/button";
 @use "../components/card";
-@use "../layaouts/header";
-@use "../layaouts/sidebar";
-@use "../layaouts/player";
+@use "../layout/header";
+@use "../layout/sidebar";
+@use "../layout/player";
 @use "../pages/home";
 @use "../pages/library";
 @use "../pages/album";
