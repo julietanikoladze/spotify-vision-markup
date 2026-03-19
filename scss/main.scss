@@ -1,5 +1,6 @@
-// @use "../abstracts/variables";
-// @use "../abstracts/mixins";
+
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
 @use "../base/reset";
 @use "../base/typography";
 @use "../components/button";
@@ -11,4 +12,17 @@
 @use "../pages/library";
 @use "../pages/album";
 @use "../pages/search";
+
+
+
+
+html {
+    font-size: 62.5%;
+}
+
+@media (max-width: 77rem) {
+    .left-sidebar {
+        display: none;
+    }
+}
 
