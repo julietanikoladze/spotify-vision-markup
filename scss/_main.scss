@@ -12,3 +12,14 @@
 @use "../pages/album";
 @use "../pages/search";
 
+
+
+html {
+    font-size: 62.5%;
+}
+
+@media (max-width: 77rem) {
+    .left-sidebar {
+        display: none;
+    }
+}
