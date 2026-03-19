@@ -36,7 +36,6 @@ ol, ul {
   font-family: "Satoshi-Regular";
 }
 
-
 .left-sidebar {
   background-color: rgb(6, 6, 6);
   width: 25.9rem;
@@ -75,6 +74,7 @@ ol, ul {
 .dropdown-arrow {
   width: 1.2rem;
   height: 1.2rem;
+}
 
 html {
   font-size: 62.5%;
