@@ -1,0 +1,43 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.left-sidebar {
+    background-color: variables.$page-bg-color;
+    width: 25.9rem;
+    height: 100vh;
+    padding-inline: 1.1rem;
+}
+.sidebar-actions {
+    // display: block;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;    
+
+}
+.sidebar-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-coclor 0.3s ease-in-out color 0.3s ease; 
+    &:hover {
+        transform: scale(1.1);
+        background-color: rgba(6, 6, 6, 0.8); 
+        // transition: transform 0.2s linear 0s;  
+
+    }
+}
+    .sidebar-action__name {
+        display: flex;
+        align-items: center;
+        font-weight: variables.$hp-sdbtitl-font-weight;
+        font-size: variables.$hp-sdbtitl-font;
+        letter-spacing: 3%;
+        color: variables.$all-main-txt-icon-col;
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+
+.dropdown-arrow {
+    width: 1.2rem;
+    height: 1.2rem;
+}
