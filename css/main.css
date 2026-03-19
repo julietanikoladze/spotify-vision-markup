@@ -36,4 +36,14 @@ ol, ul {
   font-family: "Satoshi-Regular";
 }
 
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 77rem) {
+  .left-sidebar {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
