@@ -183,6 +183,140 @@ ol, ul {
   height: 1.2rem;
 }
 
+.playlist-card {
+  width: 25rem;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.playlist-card:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.playlist-card:hover .play-button {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(20, 20, 30, 0.5) 0%, rgba(10, 10, 20, 0.9) 100%);
+  z-index: 1;
+}
+
+.spotify-logo {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-image: url("assets/images/spotify-logo-white.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  z-index: 2;
+}
+
+.text-on-image {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  width: calc(100% - 3rem);
+  z-index: 2;
+  color: rgb(224, 224, 224);
+}
+.text-on-image::before {
+  content: "Discover";
+  display: block;
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 1;
+}
+.text-on-image::after {
+  content: "Weekly";
+  display: block;
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 1;
+}
+
+.play-button {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: green;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  z-index: 3;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease-in-out;
+}
+.play-button i {
+  color: black;
+  font-size: 2rem;
+  margin-left: 0.3rem;
+}
+.play-button:hover {
+  transform: scale(1.06) translateY(0);
+}
+
+.card-info {
+  padding: 0 0.5rem;
+}
+
+.info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: rgb(224, 224, 224);
+}
+
+.song-count {
+  color: #cc66ff;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.card-description {
+  font-size: 1.4rem;
+  color: rgb(137, 137, 137);
+  line-height: 1.4;
+  font-weight: 300;
+}
+
 html {
   font-size: 62.5%;
 }
