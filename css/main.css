@@ -6,6 +6,10 @@
 
 button {
   cursor: pointer;
+  background: none;
+  font: inherit;
+  color: inherit;
+  outline: none;
 }
 
 a {
@@ -34,6 +38,108 @@ ol, ul {
 }
 * {
   font-family: "Satoshi-Regular";
+}
+
+
+.header-nav {
+  display: flex;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(17, 17, 17, 0.85) 0%, #111111 42.62%);
+  position: fixed;
+  bottom: 0;
+  gap: 0;
+  padding: 1.5rem;
+}
+
+.nav-phone {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+.nav-phone .nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+}
+.nav-phone .nav-icon {
+  color: rgb(137, 137, 137);
+}
+.nav-phone .nav-title {
+  color: rgb(137, 137, 137);
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-family: Satoshi;
+  line-height: 100%;
+  letter-spacing: 3%;
+  padding: 1.4rem;
+}
+
+.nav-item:hover .nav-icon,
+.action-item:hover {
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+  transition: filter 0.3s ease;
+}
+
+.open-friends {
+  all: unset;
+}
+
+.header-actions {
+  display: none;
+}
+
+@media (max-width: 77rem) {
+  .header-actions,
+  .action-item,
+  .open-friends {
+    display: none;
+  }
+}
+@media (min-width: 77rem) {
+  .header-nav {
+    position: fixed;
+    top: 0;
+    left: 25.9rem;
+    width: calc(100% - 25.9rem);
+    height: 8.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: auto;
+  }
+  .nav-phone {
+    width: auto;
+    justify-content: flex-start;
+    gap: 5rem;
+  }
+  .nav-phone .nav-item {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .nav-phone li {
+    transition: background-color 0.3s ease;
+    border-radius: 0.8rem;
+  }
+  .nav-phone li:hover {
+    background-color: rgba(0, 255, 0, 0.1);
+  }
+  .library,
+  .person {
+    display: none;
+  }
+  .header-actions {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-actions .action-item {
+    display: flex;
+    padding: 0.5rem;
+  }
 }
 
 .left-sidebar {
@@ -75,6 +181,7 @@ ol, ul {
   width: 1.2rem;
   height: 1.2rem;
 }
+
 
 html {
   font-size: 62.5%;

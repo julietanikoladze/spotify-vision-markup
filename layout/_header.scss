@@ -1,2 +1,97 @@
 @use "../abstracts/mixins";
 @use "../abstracts/variables";
+
+.header-nav {
+    display: flex;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0.85) 0%, #111111 42.62%);
+    position: fixed;
+    bottom: 0;
+    gap: 0;
+    padding: 1.5rem;
+}
+.nav-phone {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    & .nav-item {
+    @include mixins.flex-col-center;
+    justify-content: center;
+    }
+    & .nav-icon {
+        color: variables.$header-text-col;
+    }
+    & .nav-title {
+        @include mixins.header-text;
+        padding: 1.4rem;
+    }
+}
+.nav-item:hover .nav-icon,
+.action-item:hover {
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+    transition: filter 0.3s ease;
+}
+.open-friends {
+    all: unset;
+}
+.header-actions {
+    display: none;
+}
+
+
+@media (max-width: 77rem) {
+    .header-actions,
+    .action-item,
+    .open-friends {
+        display: none;
+    }
+}
+
+@media (min-width: 77rem) {
+    .header-nav {
+        position: fixed;
+        top: 0;
+        left: 25.9rem; 
+        width: calc(100% - 25.9rem); 
+        height: 8.1rem; 
+        display: flex; 
+        align-items: center;
+        justify-content: space-between; 
+        bottom: auto; 
+    }
+
+    .nav-phone {
+        width: auto; 
+        justify-content: flex-start;
+        gap: 5rem; 
+       
+        & .nav-item {
+            flex-direction: row; 
+            gap: 1rem;
+        }
+    }
+            .nav-phone li {
+            transition: background-color 0.3s ease;
+            border-radius: 0.8rem; 
+
+            &:hover {
+                background-color: rgba(0, 255, 0, 0.1);
+            }
+        }
+    .library,
+    .person {
+        display: none;
+    }
+
+    .header-actions {
+        display: flex; 
+        gap: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        & .action-item {
+            display: flex;
+            padding: 0.5rem;
+        }
+    }
+}

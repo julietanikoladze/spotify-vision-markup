@@ -80,3 +80,14 @@
     font-size: variables.$section-titl-font-size;
     color: variables.$main-titl-col;
 }
+
+// new mixins
+
+@mixin header-text {
+    color: variables.$header-text-col;
+    font-weight: variables.$header-text-wght;
+    font-size: variables.$header-text-font;
+    font-family: variables.$header-txt-font-fam;
+    line-height: variables.$header-txt-lnh;
+    letter-spacing: variables.$header-txt-let-space;
+}
