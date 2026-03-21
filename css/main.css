@@ -40,7 +40,6 @@ ol, ul {
   font-family: "Satoshi-Regular";
 }
 
-
 .header-nav {
   display: flex;
   width: 100%;
@@ -124,6 +123,7 @@ ol, ul {
     border-radius: 0.8rem;
   }
   .nav-phone li:hover {
+    transform: scale(1.1);
     background-color: rgba(0, 255, 0, 0.1);
   }
   .library,
@@ -141,7 +141,6 @@ ol, ul {
     padding: 0.5rem;
   }
 }
-
 .left-sidebar {
   background-color: rgb(6, 6, 6);
   width: 25.9rem;
@@ -163,7 +162,9 @@ ol, ul {
 }
 .sidebar-action:hover {
   transform: scale(1.1);
-  background-color: rgba(6, 6, 6, 0.8);
+  background-color: rgba(0, 255, 0, 0.1);
+  transition: background-color 0.3s ease;
+  border-radius: 0.8rem;
 }
 
 .sidebar-action__name {
@@ -181,7 +182,6 @@ ol, ul {
   width: 1.2rem;
   height: 1.2rem;
 }
-
 
 html {
   font-size: 62.5%;
