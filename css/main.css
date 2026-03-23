@@ -183,6 +183,14 @@ ol, ul {
   height: 1.2rem;
 }
 
+.cards-container {
+  width: calc(100vw - 25.9rem);
+  left: 25.9rem;
+  top: 8.1rem;
+  position: absolute;
+  background-color: rgb(6, 6, 6);
+}
+
 .main-section-filters {
   padding: 1.3rem 1.5rem 1.3rem 0;
 }
