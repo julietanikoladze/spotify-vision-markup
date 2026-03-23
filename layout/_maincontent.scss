@@ -1,12 +1,12 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixins";
-.cards-container {
-    width: calc(100vw - 25.9rem);
-    left: 25.9rem;
-    top: 8.1rem;
-    position: absolute;
-    background-color: variables.$page-bg-color;
-}
+// .cards-container {
+//     width: calc(100% - 25.9rem);
+//     left: 25.9rem;
+//     top: 8.1rem;
+//     position: absolute;
+//     background-color: variables.$page-bg-color;
+// }
 
 .main-section-filters {
   padding: 1.3rem 1.5rem 1.3rem 0;
@@ -112,12 +112,6 @@
     }
   }
 }
-
-// .filter-button:first-child {
-//   display: none !important;
-// }
-
-
 
 $card-colors: (
   pink: variables.$card-pink,

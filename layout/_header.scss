@@ -3,7 +3,7 @@
 
 .header-nav {
     display: flex;
-    width: 100%;
+    width: calc(100vw - 25.9rem);
     background: linear-gradient(180deg, rgba(17, 17, 17, 0.85) 0%, #111111 42.62%);
     position: fixed;
     bottom: 0;
