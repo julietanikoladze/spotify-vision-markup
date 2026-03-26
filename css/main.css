@@ -42,7 +42,7 @@ ol, ul {
 
 .header-nav {
   display: flex;
-  width: calc(100vw - 25.9rem);
+  width: 100%;
   background: linear-gradient(180deg, rgba(17, 17, 17, 0.85) 0%, #111111 42.62%);
   position: fixed;
   bottom: 0;
@@ -54,7 +54,7 @@ ol, ul {
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .nav-phone .nav-item {
   display: flex;
@@ -110,8 +110,6 @@ ol, ul {
     bottom: auto;
   }
   .nav-phone {
-    width: auto;
-    justify-content: flex-start;
     gap: 5rem;
   }
   .nav-phone .nav-item {
@@ -175,7 +173,7 @@ ol, ul {
   font-size: 1.4rem;
   letter-spacing: 3%;
   color: rgb(137, 137, 137);
-  padding: 1.5rem;
+  padding: 2rem;
   gap: 1rem;
 }
 
@@ -201,12 +199,17 @@ figure, figcaption {
   padding: 0;
 }
 
+.discover-container {
+  left: 0;
+}
+
 .search-main-tittl {
   color: rgb(224, 224, 224);
   font-weight: 700;
   font-family: Satoshi;
   font-size: 2rem;
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .section-title {
@@ -219,12 +222,13 @@ figure, figcaption {
 
 .main-section {
   padding: 1.5rem;
+  left: 0;
 }
 
 .recent-searches {
   display: flex;
   gap: 3rem;
-  padding: 3rem;
+  padding: 3rem 0;
 }
 
 .searches-artist {
@@ -1293,7 +1297,6 @@ body .friends-section {
     overflow-x: hidden;
   }
   body .main-section {
-    margin-top: 8.1rem;
     padding-bottom: 3rem;
     position: relative;
   }
